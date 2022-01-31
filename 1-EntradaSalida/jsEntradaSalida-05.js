@@ -11,8 +11,8 @@ function mostrar()
 	var tomarNombre;
 
 	//guardar los datos en las var
-	tomarNombre = txtIdNombre.value;
-	tomarEdad = txtIdEdad.value;
+	tomarNombre = document.getElementById("txtIdNombre").value;
+	tomarEdad = document.getElementById("txtIdEdad").value;
 
 	alert("Usted se llama: " + tomarNombre + " y tiene " + tomarEdad + " años");
 }

@@ -9,7 +9,7 @@ function mostrar()
 	var nombreIngresado;
 
 	//tomar el dato de la casilla
-	nombreIngresado = txtIdNombre.value;
+	nombreIngresado = document.getElementById("txtIdNombre").value;
 
 	//mostrar el dato
 	alert(nombreIngresado);

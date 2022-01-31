@@ -13,6 +13,6 @@ function mostrar()
 	//guardar el dato en la var
 	tomarDato = prompt("Ingrese su nombre");
 
-	txtIdNombre.value=tomarDato;
+	txtIdNombre.value = tomarDato;
 }
 
