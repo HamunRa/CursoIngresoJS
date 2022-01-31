@@ -1,5 +1,6 @@
 /*
 Lucas Soriano Baccarelli DIV E
+E/S Eje2
 Debemos lograr tomar un nombre con 'prompt' 
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
