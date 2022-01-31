@@ -12,8 +12,10 @@ function mostrar()
 
 	//guardar los datos en las var
 	tomarNombre = document.getElementById("txtIdNombre").value;
+
 	tomarEdad = document.getElementById("txtIdEdad").value;
 
+	//Mostrar los datos en pantalla
 	alert("Usted se llama: " + tomarNombre + " y tiene " + tomarEdad + " años");
 }
 

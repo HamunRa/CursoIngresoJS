@@ -12,7 +12,8 @@ function mostrar()
 
 	//guardar el dato en la var
 	tomarDato = prompt("Ingrese su nombre");
-
+	
+	//Mostrar el dato en la casilla de texto
 	txtIdNombre.value = tomarDato;
 }
 
