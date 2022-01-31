@@ -18,4 +18,3 @@ function mostrar()
 	//Mostrar los datos en pantalla
 	alert("Usted se llama: " + tomarNombre + " y tiene " + tomarEdad + " años");
 }
-

@@ -16,4 +16,3 @@ function mostrar()
 	//Mostrar el dato en la casilla de texto
 	txtIdNombre.value = tomarDato;
 }
-

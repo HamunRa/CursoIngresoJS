@@ -13,5 +13,4 @@ function mostrar()
 
 	//mostrar datos de la var
 	alert(tomarDato);
-
 }

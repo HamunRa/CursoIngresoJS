@@ -21,4 +21,3 @@ function sumar()
 	//mostrar el resultado
 	alert("El resultado es: " + sumaTotal);
 }
-

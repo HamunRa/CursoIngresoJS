@@ -15,5 +15,3 @@ function mostrar()
 	alert("Su nombre es " + nombreIngresado);
 
 }
-
-
