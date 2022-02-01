@@ -16,9 +16,7 @@ function SacarResto()
 	numDos = document.getElementById("txtIdNumeroDivisor").value;
 
 	//Calcula el resto
-	calcuDiv = parseInt(numUno) / parseInt(numDos);
-	calcuDiv = parseInt(calcuDiv) * numDos;
-	calcuDiv = numUno - calcuDiv;
+	calcuDiv = parseInt(numUno) % parseInt(numDos);
 
 	//Muestra el resultado
 	alert("El resto es: " + calcuDiv);
