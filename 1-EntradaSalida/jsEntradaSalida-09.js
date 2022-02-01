@@ -1,3 +1,5 @@
+const { parse } = require("dotenv");
+
 /*
 Debemos lograr tomar el importe por ID ,
 transformarlo a entero (parseInt), luego
@@ -9,13 +11,15 @@ function mostrarAumento()
 	//declarar var
 	var numeroUno;
 	var calcuAumento;
+	var resultado;
 
 	//tomar los datos de las casillas
 	numeroUno = document.getElementById("txtIdSueldo").value;
 
 	//calcular el aumento del sueldo
 	calcuAumento = parseInt(numeroUno) * 10 / 100 ;
+	resultado = parseInt(numeroUno) + parseInt(calcuAumento);
 
 	//mostrar el resultado
-	document.getElementById("txtIdResultado").value = calcuAumento;
+	document.getElementById("txtIdResultado").value = resultado;
 }
