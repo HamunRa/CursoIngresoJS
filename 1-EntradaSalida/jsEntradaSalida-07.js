@@ -34,7 +34,7 @@ function restar()
 	numeroUno = document.getElementById("txtIdNumeroUno").value;
 	numeroDos = document.getElementById("txtIdNumeroDos").value;
 
-	//sumar las dos var
+	//restar las dos var
 	restaTotal = parseInt(numeroUno) - parseInt(numeroDos);
 
 	//mostrar el resultado
@@ -52,7 +52,7 @@ function multiplicar()
 	numeroUno = document.getElementById("txtIdNumeroUno").value;
 	numeroDos = document.getElementById("txtIdNumeroDos").value;
 
-	//sumar las dos var
+	//multiplicar las dos var
 	multiTotal = parseInt(numeroUno) * parseInt(numeroDos);
 
 	//mostrar el resultado
@@ -70,7 +70,7 @@ function dividir()
 	numeroUno = document.getElementById("txtIdNumeroUno").value;
 	numeroDos = document.getElementById("txtIdNumeroDos").value;
 
-	//sumar las dos var
+	//dividir los datos de las var
 	diviTotal = parseInt(numeroUno) / parseInt(numeroDos);
 
 	//mostrar el resultado
