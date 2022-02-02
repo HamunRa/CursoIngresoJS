@@ -61,7 +61,7 @@ function Materiales ()
     cal = 3;
 
     //operaciones
-    resultado = largo + ancho;
+    resultado = largo * ancho;
     bolsas = resultado * bolsas;
     cal = resultado * cal;
 
