@@ -1,5 +1,8 @@
-function mostrar()
-{
+/*
+Lucas Soriano Baccarelli DIV E
+IF Eje9
+*/
+function mostrar() {
 	//declarar varialbes
 	var numero;
 	var numeroMax;
