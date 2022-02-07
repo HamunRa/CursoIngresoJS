@@ -8,11 +8,14 @@ function mostrar() {
 	var numeroMax;
 	var numeroMin;
 
+	//asignar los valores
 	numeroMax = 10;
 	numeroMin = 1;
 
+	//crear el numero random
 	nota = Math.round(Math.random() * (numeroMax - numeroMin) + numeroMin);
 
+	
 	if (nota >= 9) {
 		alert("Excelente")
 	}

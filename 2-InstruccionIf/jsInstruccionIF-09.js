@@ -3,12 +3,12 @@ Lucas Soriano Baccarelli DIV E
 IF Eje9
 */
 function mostrar() {
-	//declarar varialbes
+	//declarar variables
 	var numero;
 	var numeroMax;
 	var numeroMin;
 
-	//asignar valores a mis variales
+	//asignar los valores
 	numeroMax = 10;
 	numeroMin = 1;
 
