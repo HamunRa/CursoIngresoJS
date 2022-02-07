@@ -7,6 +7,8 @@ function mostrar() {
 	var edad;
 	var estadoCivil;
 
+	edad = parseInt(edad)
+
 	//tomar el dato de la casilla
 	edad = document.getElementById("txtIdEdad").value;
 

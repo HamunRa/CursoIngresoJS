@@ -7,6 +7,8 @@ IF Eje8
 	var edad;
 	var estadoCivil;
 
+	edad = parseInt(edad)
+
 	//Tomar los datos de las casillas
 	edad = document.getElementById("txtIdEdad").value;
 
