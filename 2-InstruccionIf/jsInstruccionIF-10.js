@@ -15,7 +15,6 @@ function mostrar() {
 	//crear el numero random
 	nota = Math.round(Math.random() * (numeroMax - numeroMin) + numeroMin);
 
-	
 	if (nota >= 9) {
 		alert("Excelente")
 	}
