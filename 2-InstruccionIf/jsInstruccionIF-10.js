@@ -5,23 +5,17 @@ IF Eje10
 function mostrar() {
 	//declarar variable
 	var nota;
-	var numeroMax;
-	var numeroMin;
-
-	//asignar los valores
-	numeroMax = 10;
-	numeroMin = 1;
 
 	//crear el numero random
-	nota = Math.round(Math.random() * (numeroMax - numeroMin) + numeroMin);
+	nota = Math.round(Math.random() * (10 - 1) + 1);
 
-	if (nota >= 9) {
-		alert("Excelente")
+	if (nota > 8) {
+		alert("Excelente, nota: " + nota)
 	}
-	else if (nota >= 4) {
-		alert("Aprobo")
+	else if (nota > 3) {
+		alert("Aprobo, nota: " + nota)
 	}
 	else {
-		alert("Vamos, la proxima se puede")
+		alert("Vamos, la proxima se puede, nota: " + nota)
 	}
 }//FIN DE LA FUNCIÓN
