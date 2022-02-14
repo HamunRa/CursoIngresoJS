@@ -9,9 +9,9 @@ si es Diciembre: "Felices fiesta!!!."
 */
 function mostrar() {
 	//tomo el mes
-	var mesDelAño = document.getElementById("txtIdMes").value;
+	var mesDelAnio = document.getElementById("txtIdMes").value;
 
-	switch (mesDelAño) {
+	switch (mesDelAnio) {
 		case value = "Enero":
 			alert("Que comiences bien el año!!!.");
 			break;
@@ -23,7 +23,7 @@ function mostrar() {
 			break;
 		case value = "Diciembre":
 			alert("Felices fiesta!!!.");
-			break
+			break;
 	}
 
 }//FIN DE LA FUNCIÓN

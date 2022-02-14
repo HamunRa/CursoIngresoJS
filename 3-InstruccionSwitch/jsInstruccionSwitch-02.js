@@ -1,4 +1,6 @@
 /*
+Lucas Soriano Baccarelli DIV E
+Switch Eje2
 al seleccionar un mes informar.
 si estamos en Invierno: "Abrigate que hace frio."
 si aún no llego el Invierno: "Falta para el invierno."
@@ -7,17 +9,24 @@ ACLARAcIÓN: tomamos a Julio y Agosto como los meses de Invierno.
 */
 function mostrar() {
 	//tomo el mes
-	var mesDelAño = document.getElementById("txtIdMes").value;
+	var mesDelAnio = document.getElementById("txtIdMes").value;
+	var mensaje;
 
-	switch (mesDelAño) {
-		case value = "Julio", "Agosto":
-			alert("Abrigate que hace frio.");
+	switch (mesDelAnio) {
+		case "Septiembre":
+		case "Octubre":
+		case "Noviembre":
+		case "Diciembre":
+		case "Enero":
+		case "Febrero":
+			mensaje = "Ya pasamos el frio, ahora calor!!!";
 			break;
-		case value = "Marzo", "Abril", "Mayo", "Junio":
-			alert("Falta para el invierno.");
+		case "Julio":
+		case "Agosto":
+			mensaje = "Abrigate que hace frio.";
 			break;
-		case value = "Septiembre", "Octubre", "Noviembre", "Diciembre", "Enero":
-			alert("Ya pasamos el frio, ahora calor!!!.")
-			break;
+		default:
+			mensaje = "Falta para el invierno";
 	}
+	alert(mensaje)
 }//FIN DE LA FUNCIÓN
