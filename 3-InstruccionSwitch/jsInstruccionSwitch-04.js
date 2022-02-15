@@ -1,3 +1,7 @@
+/*
+Lucas Soriano Baccarelli DIV E
+Switch Eje4
+*/
 function mostrar() {
 	//tomo el mes
 	var mesDelAnio = txtIdMes.value;

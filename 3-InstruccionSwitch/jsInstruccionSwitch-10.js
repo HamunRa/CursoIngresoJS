@@ -1,3 +1,7 @@
+/*
+Lucas Soriano Baccarelli DIV E
+Switch Eje10
+*/
 function mostrar() {
 	var estacionIngresada;
 	var destino;

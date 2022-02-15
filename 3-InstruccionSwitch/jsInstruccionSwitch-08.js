@@ -1,3 +1,7 @@
+/*
+Lucas Soriano Baccarelli DIV E
+Switch Eje8
+*/
 function mostrar() {
 	var destinoIngresado;
 	var mensaje;

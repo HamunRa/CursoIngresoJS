@@ -26,6 +26,15 @@ function CalcularPrecio() {
     precioLamp = 35;
     precioFinal = precioLamp * cantidadLamparas;
     descuento = 0;
+    
+}
+   
+
+
+
+
+
+/* 
 
     if (cantidadLamparas >= 6) {
 
@@ -77,5 +86,4 @@ function CalcularPrecio() {
 
     precioFinal = precioFinal - descuento;
     document.getElementById("txtIdprecioDescuento").value = precioFinal;
-
-}
+*/

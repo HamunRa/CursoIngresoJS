@@ -1,3 +1,7 @@
+/*
+Lucas Soriano Baccarelli DIV E
+Switch Eje6
+*/
 function mostrar() {
 	//tomo la hora
 	var horaDelDia = txtIdHora.value;
