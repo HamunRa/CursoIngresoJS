@@ -30,40 +30,33 @@ function CalcularPrecio() {
     precioFinal = precioLamp * cantidadLamparas;
     descuento = 0;
 
+    //switch if
     switch (cantidadLamparas) {
         case 5:
-            switch (marca) {
-                case "ArgentinaLuz":
-                    descuento = (precioFinal * 40 / 100);
-                    break;
-                default:
-                    descuento = (precioFinal * 30 / 100);
+            if (marca == "ArgentinaLuz") {
+                descuento = (precioFinal * 40 / 100);
+            } else {
+                descuento = (precioFinal * 30 / 100);
             }
             break;
         case 4:
-            switch (marca) {
-                case "ArgentinaLuz":
-                case "FelipeLamparas":
-                    descuento = (precioFinal * 25 / 100);
-                    break;
-                default:
-                    descuento = (precioFinal * 20 / 100);
+            if (marca == "ArgentinaLuz" || marca == "FelipeLamparas") {
+                descuento = (precioFinal * 25 / 100);
+            } else {
+                descuento = (precioFinal * 20 / 100);
             }
             break;
         case 3:
-            switch (marca) {
-                case "ArgentinaLuz":
-                    descuento = (precioFinal * 15 / 100);
-                case "FelipeLamparas":
-                    descuento = (precioFinal * 10 / 100);
-                    break;
-                default:
-                    descuento = (precioFinal * 5 / 100);
+            if (marca == "ArgentinaLuz") {
+                descuento = (precioFinal * 15 / 100);
+            } else if (marca == "FelipeLamparas") {
+                descuento = (precioFinal * 10 / 100);
+            } else {
+                descuento = (precioFinal * 5 / 100);
             }
             break;
         default:
             descuento = (precioFinal * 50 / 100);
-
     }
 
     if (precioFinal > 120) {
@@ -76,13 +69,58 @@ function CalcularPrecio() {
 
     precioFinal = precioFinal - descuento;
     document.getElementById("txtIdprecioDescuento").value = precioFinal;
-}
+
+    /* Switch switch
+        switch (cantidadLamparas) {
+            case 5:
+                switch (marca) {
+                    case "ArgentinaLuz":
+                        descuento = (precioFinal * 40 / 100);
+                        break;
+                    default:
+                        descuento = (precioFinal * 30 / 100);
+                }
+                break;
+            case 4:
+                switch (marca) {
+                    case "ArgentinaLuz":
+                    case "FelipeLamparas":
+                        descuento = (precioFinal * 25 / 100);
+                        break;
+                    default:
+                        descuento = (precioFinal * 20 / 100);
+                }
+                break;
+            case 3:
+                switch (marca) {
+                    case "ArgentinaLuz":
+                        descuento = (precioFinal * 15 / 100);
+                    case "FelipeLamparas":
+                        descuento = (precioFinal * 10 / 100);
+                        break;
+                    default:
+                        descuento = (precioFinal * 5 / 100);
+                }
+                break;
+            default:
+                descuento = (precioFinal * 50 / 100);
+    
+        }
+    
+        if (precioFinal > 120) {
+    
+            impIIBB = precioFinal * 10 / 100;
+            precioFinal = precioFinal + impIIBB;
+            alert("Usted pago " + impIIBB + " de IIBB.");
+    
+        }
+    
+        precioFinal = precioFinal - descuento;
+        document.getElementById("txtIdprecioDescuento").value = precioFinal;
+        */
 
 
-
-
-
-/* 
+    /* solo IF
 
     if (cantidadLamparas >= 6) {
 
@@ -135,3 +173,8 @@ function CalcularPrecio() {
     precioFinal = precioFinal - descuento;
     document.getElementById("txtIdprecioDescuento").value = precioFinal;
 */
+}
+
+
+
+
