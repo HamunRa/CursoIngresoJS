@@ -12,8 +12,7 @@ var largo;
 var ancho;
 var radio;
 var resultado;
-function Rectangulo () 
-{
+function Rectangulo() {
 
     //tomar los datos de las casillas
     largo = document.getElementById("txtIdLargo").value;
@@ -26,26 +25,25 @@ function Rectangulo ()
     resultado = resultado * 3;
 
     alert("La cantidad de alambre necesitada es de: " + resultado + " m");
-;}
-function Circulo () 
-{
+    ;
+}
+function Circulo() {
     let area;
     let alambre;
     PI = Math.PI;
 
     //tomar el dato de la casilla
-	radio = document.getElementById("txtIdRadio").value;
+    radio = document.getElementById("txtIdRadio").value;
 
     radio = parseInt(radio);
-    
+
     //calcular el area
     area = PI * radio * radio;
     alambre = area * 3;
 
-    alert("La cantidad de alambre necesitada es de: " + alambre + " m") ;
+    alert("La cantidad de alambre necesitada es de: " + alambre + " m");
 }
-function Materiales () 
-{
+function Materiales() {
     let bolsas;
     let cal;
 

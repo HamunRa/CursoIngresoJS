@@ -11,7 +11,7 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 //declarar variable
 var numeroSecreto;
 var contadorIntentos;
-contadorIntentos = 1;
+contadorIntentos = 0;
 
 function comenzar() {
 
@@ -26,18 +26,21 @@ function verificar() {
 
   verificarNum = document.getElementById("txtIdNumero").value;
   verificarNum = parseInt(verificarNum);
+  contadorIntentos++;
+  console.log(contadorIntentos);
 
   if (verificarNum == numeroSecreto) {
 
     alert("Usted es un ganador!!! y en solo " + contadorIntentos + " intentos");
-    contadorIntentos = 1;
+    contadorIntentos = 0;
 
   } else if (verificarNum > numeroSecreto) {
-    contadorIntentos = contadorIntentos + 1;
+
     alert("Se paso, intento numeros mas bajos ");
 
   } else if (verificarNum < numeroSecreto) {
-    contadorIntentos = contadorIntentos + 1;
+
     alert("Falta para llegar al numero secreto ");
+
   }
 }

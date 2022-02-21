@@ -8,27 +8,25 @@ B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en
 var fahre;
 var centi;
 var resultado;
-function FahrenheitCentigrados () 
-{
+function FahrenheitCentigrados() {
 
-	fahre = document.getElementById("txtIdTemperatura").value;
+    fahre = document.getElementById("txtIdTemperatura").value;
 
     fahre = parseFloat(fahre);
 
-    resultado = (fahre - 32) * 5/9;
+    resultado = (fahre - 32) * 5 / 9;
     resultado = parseInt(resultado);
 
     alert(fahre + " Fahrenheit son " + resultado + " centígrados")
 }
 
-function CentigradosFahrenheit () 
-{
+function CentigradosFahrenheit() {
 
     centi = document.getElementById("txtIdTemperatura").value;
 
     centi = parseFloat(centi);
 
-    resultado = (centi * 9/5) + 32;
+    resultado = (centi * 9 / 5) + 32;
 
     alert(centi + " centígrados son " + resultado + " Fahrenheit")
 }

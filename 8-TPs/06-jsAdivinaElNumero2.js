@@ -23,13 +23,13 @@ function comenzar() {
 
 function verificar() {
 
-	console.log(contadorIntentos);
-
 	var verificarNum;
 
 	verificarNum = document.getElementById("txtIdNumero").value;
 	verificarNum = parseInt(verificarNum);
-	contadorIntentos = contadorIntentos + 1;
+	contadorIntentos++;
+	console.log(contadorIntentos);
+
 	if (verificarNum == numeroSecreto) {
 		if(contadorIntentos == 1) {
 			alert("usted es un Psíquico")

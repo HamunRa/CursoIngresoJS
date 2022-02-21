@@ -1,4 +1,7 @@
-/*4.	Para el departamento de iluminación:
+/*
+Soriano Baccarelli Lucas
+TP4 SIWTCH / IF
+4.	Para el departamento de iluminación:
 Tomando en cuenta que todas las lámparas están en oferta al mismo precio de $35 pesos final.
 A.	Si compra 6 o más  lamparitas bajo consumo tiene un descuento del 50%. 
 B.	Si compra 5  lamparitas bajo consumo marca "ArgentinaLuz" se hace un descuento del 40 % y si es de otra marca el descuento es del 30%.
@@ -9,7 +12,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
  */
 function CalcularPrecio() {
-    
+
     //declaro las variables
     var precioLamp;
     var cantidadLamparas;
@@ -26,9 +29,54 @@ function CalcularPrecio() {
     precioLamp = 35;
     precioFinal = precioLamp * cantidadLamparas;
     descuento = 0;
-    
+
+    switch (cantidadLamparas) {
+        case 5:
+            switch (marca) {
+                case "ArgentinaLuz":
+                    descuento = (precioFinal * 40 / 100);
+                    break;
+                default:
+                    descuento = (precioFinal * 30 / 100);
+            }
+            break;
+        case 4:
+            switch (marca) {
+                case "ArgentinaLuz":
+                case "FelipeLamparas":
+                    descuento = (precioFinal * 25 / 100);
+                    break;
+                default:
+                    descuento = (precioFinal * 20 / 100);
+            }
+            break;
+        case 3:
+            switch (marca) {
+                case "ArgentinaLuz":
+                    descuento = (precioFinal * 15 / 100);
+                case "FelipeLamparas":
+                    descuento = (precioFinal * 10 / 100);
+                    break;
+                default:
+                    descuento = (precioFinal * 5 / 100);
+            }
+            break;
+        default:
+            descuento = (precioFinal * 50 / 100);
+
+    }
+
+    if (precioFinal > 120) {
+
+        impIIBB = precioFinal * 10 / 100;
+        precioFinal = precioFinal + impIIBB;
+        alert("Usted pago " + impIIBB + " de IIBB.");
+
+    }
+
+    precioFinal = precioFinal - descuento;
+    document.getElementById("txtIdprecioDescuento").value = precioFinal;
 }
-   
 
 
 

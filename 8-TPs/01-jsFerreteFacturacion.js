@@ -13,10 +13,9 @@ var numDos;
 var numTres;
 var resultado;
 
-function Sumar () 
-{
+function Sumar() {
     //Tomar los datos ingresados en las casillas de texto
-	numUno = document.getElementById("txtIdPrecioUno").value;
+    numUno = document.getElementById("txtIdPrecioUno").value;
     numDos = document.getElementById("txtIdPrecioDos").value;
     numTres = document.getElementById("txtIdPrecioTres").value;
 
@@ -30,11 +29,10 @@ function Sumar ()
     //Mostrar el resultado
     alert("El total es: " + resultado)
 }
-function Promedio () 
-{
+function Promedio() {
 
-	//Tomar los datos ingresados en las casillas de texto
-	numUno = document.getElementById("txtIdPrecioUno").value;
+    //Tomar los datos ingresados en las casillas de texto
+    numUno = document.getElementById("txtIdPrecioUno").value;
     numDos = document.getElementById("txtIdPrecioDos").value;
     numTres = document.getElementById("txtIdPrecioTres").value;
 
@@ -49,11 +47,10 @@ function Promedio ()
     alert("El promedio es: " + resultado)
 
 }
-function PrecioFinal () 
-{
+function PrecioFinal() {
 
-	//Tomar los datos ingresados en las casillas de texto
-	numUno = document.getElementById("txtIdPrecioUno").value;
+    //Tomar los datos ingresados en las casillas de texto
+    numUno = document.getElementById("txtIdPrecioUno").value;
     numDos = document.getElementById("txtIdPrecioDos").value;
     numTres = document.getElementById("txtIdPrecioTres").value;
 
@@ -62,7 +59,7 @@ function PrecioFinal ()
     numTres = parseInt(numTres);
 
     //Calcular el precio final con iva
-    resultado = (numUno + numDos + numTres) *1.21;
+    resultado = (numUno + numDos + numTres) * 1.21;
 
     //mostrar resultado
     alert("El precio final es: " + resultado)
