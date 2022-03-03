@@ -12,6 +12,7 @@ function mostrar()
 	multiplicacionNegativos=1;
 	respuesta='si';
 
+	
 
 	txtIdSuma.value=sumaPositivos;
 	txtIdProducto.value=multiplicacionNegativos;
